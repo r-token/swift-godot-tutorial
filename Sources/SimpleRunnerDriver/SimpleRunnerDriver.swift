@@ -3,4 +3,6 @@
 
 import SwiftGodot
 
-#initSwiftExtension(cdecl: "swift_entry_point", types: [PlayerController.self])
+let allNodes: [Wrapped.Type] = [PlayerController.self, MainLevel.self]
+
+#initSwiftExtension(cdecl: "swift_entry_point", types: allNodes)

@@ -18,6 +18,7 @@ class PlayerController: CharacterBody2D {
         movement.x = Float(
             Input.getActionStrength(action: "move_right") - Input.getActionStrength(action: "move_left")
         )
+        movement.y = 1.0
 
         return movement.normalized()
     }
